@@ -1,0 +1,412 @@
+<!DOCTYPE html><!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><html lang=""><head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Polymer Starter Kit">
+  <title>John Smidt's Portfolio</title>
+  <!-- Place favicon.ico in the `app/` directory -->
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#2E3AA1">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json"> 
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PSK">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endreplace-->
+
+  <!-- For shared styles, shared-styles.html import in elements.html -->
+  <style is="custom-style" include="shared-styles"></style>
+
+  <script>
+   function about() {
+      document.getElementById('about').style.display = "block";
+      document.getElementById('education').style.display = "none";
+      document.getElementById('experience').style.display = "none";
+      document.getElementById('projects').style.display = "none";
+      document.getElementById('art').style.display = "none";
+      document.getElementById('toolbar').style.display = "block";
+      document.getElementById('call-to-action').style.display = "none";
+    }
+    function education() {
+      document.getElementById('about').style.display = "none";
+      document.getElementById('education').style.display = "block";
+      document.getElementById('experience').style.display = "none";
+      document.getElementById('projects').style.display = "none";
+      document.getElementById('art').style.display = "none";
+      document.getElementById('toolbar').style.display = "block";
+      document.getElementById('call-to-action').style.display = "none";
+    }
+    function experience() {
+      document.getElementById('about').style.display = "none";
+      document.getElementById('education').style.display = "none";
+      document.getElementById('experience').style.display = "block";
+      document.getElementById('projects').style.display = "none";
+      document.getElementById('art').style.display = "none";
+      document.getElementById('toolbar').style.display = "block";
+      document.getElementById('call-to-action').style.display = "none";
+    }
+    function projects() {
+      document.getElementById('about').style.display = "none";
+      document.getElementById('education').style.display = "none";
+      document.getElementById('experience').style.display = "none";
+      document.getElementById('projects').style.display = "block";
+      document.getElementById('art').style.display = "none";
+      document.getElementById('toolbar').style.display = "block";
+      document.getElementById('call-to-action').style.display = "none";
+    }
+    function art() {
+      document.getElementById('about').style.display = "none";
+      document.getElementById('education').style.display = "none";
+      document.getElementById('experience').style.display = "none";
+      document.getElementById('projects').style.display = "none";
+      document.getElementById('art').style.display = "block";
+      document.getElementById('toolbar').style.display = "block";
+      document.getElementById('call-to-action').style.display = "none";
+    }
+
+   </script>
+
+</head>
+
+<body unresolved="" class="fullbleed layout vertical">
+  <span id="browser-sync-binding"></span>
+  <template is="dom-bind" id="app">
+
+    
+<paper-scroll-header-panel>
+ 
+
+  <div class="container">
+  </div>
+ 
+
+       <!-- Main Content -->
+        <div class="content">
+          <div class="call-to-action">
+    <div class="containerT">
+      <div class="box1T">
+        <span class="newTitle"><b>John Smidt</b></span>
+      </div>
+      <div class="box2T">
+        <span class="detail">(208) 691-6570</span>
+        <div class="icons">
+          <a href="mailto:JohnMSmidt@gmail.com" tabindex="-1" class="inherit">
+            <paper-icon-button class="icons" icon="mail"></paper-icon-button>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/john-smidt-1b65aa98/" tabindex="-1" target="_blank">
+            <paper-icon-button src="../images/In-White-121px-TM.png" alt="LinkedIn" title="LinkedIn"></paper-icon-button>
+          </a>
+          
+          <a href="https://github.com/JohnSmidt" tabindex="-1" target="_blank">
+            <paper-icon-button src="../images/GitHub-Mark-Light-120px-plus.png" alt="GitHub" title="GitHub"></paper-icon-button>
+          </a>
+        </div>
+      </div>
+
+      <div class="box2T">
+        <a href="../images/JohnSmidtResume.pdf" class="resume">Resume</a>
+      </div> 
+     
+      <div class="box3T">
+        <paper-button raised="" class="about" onclick="about()">About Me</paper-button>
+        <paper-button raised="" class="education" onclick="education()">Education</paper-button>
+        <paper-button raised="" class="experience" onclick="experience()">Experience</paper-button>
+        <paper-button raised="" class="projects" onclick="projects()">Projects</paper-button>
+        <paper-button raised="" class="art" onclick="art()">Art</paper-button>
+      </div>
+    </div>
+  </div>
+  
+          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+
+            <section data-route="home">
+
+              <div id="about">
+                 <hr class="aboutHr">
+                <paper-material elevation="1">
+
+                  <h1 class="aboutHead">About Me</h1>
+                 
+
+                  <div class="container">
+                    
+                     <div class="box1T"> 
+                       My name is John Smidt. I'm a programmer currently pursuing a degree in Computer Science. I love design, especially in video games, and creating fun and exciting user experiences with video games has been a passion of mine since I was a child. As such, I like to learn about all of the aspects of games with my spare time. I program, draw, write stories, and even play piano to develop my skill set for game design. During my free time, I play lacrosse and love to find the best bike trails around town.
+                      
+                      </div> 
+
+                      <div class="box2T">
+                        <img class="profile" src="../images/profile.png">
+                      </div>
+
+                  </div>
+
+                </paper-material>
+              </div>
+
+              <div id="education">
+                <hr class="educationHr">
+                <paper-material elevation="1">
+                  <h1>Education</h1>
+
+                    <div class="container">
+                    <h3> Brigham Young University - Idaho </h3> 
+                     
+                      
+                      <div class="box1"> 
+                       <ul>
+                          <li>Expected graduation in Winter of 2018</li>
+                          <li>Member of the Association for Computing Machinery</li>
+                          <li>
+                            <h3>Relevant Coursework:</h3>
+                              <ul>
+                                <li>Mobile Application Development</li>
+                                <li>Human Computer Interaction</li>
+                                <li>Data Structures</li>
+                                <li>Program Management</li>
+                                <li>Web Backend Development</li>
+                                <li>Object Oriented Design</li>
+                                <li>Technical Communications</li>
+                                <li>Computer Architecture</li>
+                                <li>Intro to Game Design</li>
+                              </ul>
+                          </li>
+                        </ul>
+                      </div> 
+                      
+                    </div>
+                </paper-material>
+              </div>
+
+              <div id="experience">
+                <hr class="experienceHr">
+                <paper-material elevation="1">
+                  <h1>Experience</h1>
+                  <h3>Intel Security</h3>
+
+                    <div class="container"> 
+                      
+                      <div class="box1"> 
+                        <ul>
+                          <li>Used Ruby, RSpec, and Capybara</li>
+                          <li>Worked with Intel's developers to find potential problems and edge cases in the web application.</li>
+                          <li>Created Q/A through the use of automation testing.</li>
+                          <li>
+                            Description - Provided Intel with blackbox testing by creating scripts to mimic the actions of user input and comparing the actual result with a desired result. 
+                          </li>
+                        </ul>
+                      </div> 
+                      
+                    </div>
+                </paper-material>
+
+                <paper-material elevation="1">
+                  <h3>Research and Creative Works Conference</h3>
+
+                    <div class="container"> 
+                      <div class="box2"> 
+                        <img src="../images/rcwc.jpg">
+                      </div>
+                      <div class="box1"> 
+                        <ul>
+                          <li>Built with Web2py</li>
+                          <li>Worked with a group of developers to structure the database</li>
+                          <li>Met with clientele on a weekly basis to collaborate on the design of the conference's database.</li>
+                          <li>
+                            Description - Structured a few databases for the judging portion of the R&amp;CW Conference. These databases stored the information that is important for the judging phase of the conference, and allowed judges to move around the conference without hauling a stack of papers around.
+                          </li>
+                        </ul>
+                      </div> 
+                      
+                    </div>
+                </paper-material>
+
+                <paper-material elevation="1">
+                  <h3>IPEDS Data Importer</h3>
+
+                    <div class="container"> 
+                      <div class="box2"> 
+                        
+                      </div>
+                      <div class="box1"> 
+                        <ul>
+                          <li>Built with Polymer and utilized Google Charts</li>
+                          <li>Worked as lead developer.</li>
+                          <li>Trained a team of developers for the structurization of the database.</li>
+                          <li>
+                            Description - This web application allowed for easy-to-read visualizations of data from the Integrated Postsecondary Education Data System (IPEDS), allowing students, educators, and investors to compare data from higher education institutions.
+                          </li>
+                        </ul>
+                      </div> 
+                      
+                    </div>
+                </paper-material>
+
+                <paper-material elevation="1">
+                  <h3>Interacive Geology Exhibit</h3>
+
+                    <div class="container"> 
+                      <div class="box2"> 
+                        <img src="../images/GEO.jpg">
+                      </div>
+                      <div class="box1"> 
+                        <ul>
+                          <li>Built with Web2py and Bootstrap</li>
+                          <li>Implemented a 'mason grid' that loaded the pictures and data of each mineral without ruining the height-to-width ratio of each image.</li>
+                          <li>Met with clientele on a weekly basis to collaborate on the design of the interactive tour. </li>
+                          <li>
+                            Description - This project allowed for an interactive tour of the BYU-I Geology Museum by generating QR codes for each of the glass cases containing fossils and minerals. Scanning the code will provide information about the chemical composition and location of each mineral, as well as any interesting triva about each specimen.
+                          </li>
+                        </ul>
+                      </div> 
+                      
+                    </div>
+                </paper-material>
+              </div>
+
+              <div id="projects" class="w3-container">
+                <hr class="projectsHr">
+               <paper-material elevation="1" class="w3-animate-top">
+                  <h1>Projects</h1>
+                  <h3>Geometry Wars</h3>
+
+                    <div class="container"> 
+                      <div class="box2"> 
+                        <img src="../images/GW.gif">
+                      </div>
+                      <div class="box1"> 
+                        <ul>
+                          <li>Built with Unity and JavaScript.</li>
+                          <li>30 hours to complete.</li>
+                          <li>Learned about movement in unity, UI, and initializing objects into the game.</li>
+                          <li>
+                            Description - I wanted to learn the basics of Unity and game development, so I started out with something small. This was based off of a game that I enjoyed playing years ago. 
+                          </li>
+                        </ul>
+                      </div> 
+                      
+                    </div>
+                </paper-material>
+
+                <paper-material elevation="1">
+                  <h3>Sherfox Holmes</h3>
+                  <div class="container">
+                    <div class="box2"> 
+                        <img src="../images/demo.png">
+                      </div>
+                     <div class="box1"> 
+                      <ul>
+                          <li>Built with Unity and C#.</li>
+                          <li>Currently in production.</li>
+                          <li>Implemented custom data strucures, dialog boxes, and learned about basic music production. </li>
+                          <li>
+                            Description - For this project, I wanted to deepen my understanding of Unity by making a game with a more complex design. This game was written in C#, which was a language that was completely new to me at the time. Sherfox Holmes is a randomized detective game based on memory. The player has a time limit to question suspects and determine if they are telling the truth, or lying, based on evidence found in a large mansion. 
+                          </li>
+                      </ul>
+                       
+                      </div> 
+                      
+                    </div>
+                </paper-material>
+
+                <paper-material elevation="1">
+                  <h3>3D Pacman</h3>
+
+                    <div class="container"> 
+                      <div class="box2"> 
+                        <img src="../images/pacMan.png" class="pacMan">
+                      </div>
+                      <div class="box1"> 
+                         <ul>
+                          <li>Built with WebGL and JavaScript</li>
+                          <li>70 hours to complete</li>
+                          <li>Implemented AI, trigonmetric fuctions, and basic 3D graphics. </li>
+                          <li>
+                            Description - This first started off as a project for a graphics class, but became a personal project after the class had ended. During the class, I mapped a 2D pacman map onto a 3D cylinder, using some trigonometry. Later, I added AI to the "ghosts" to make them seek after the player. 
+                          </li>
+                      </ul>
+                      </div> 
+                      
+                    </div>
+                </paper-material>
+
+              </div>
+
+              <div id="art">
+                 <hr class="artHr">
+                <paper-material elevation="1">
+                  <h1>Art</h1>
+                  <div class="cotainer">
+                    Art has been a hobby of mine for some time. While I am a programmer at heart, I have always loved the potential relationship that art and code can have together. As such, I have included some of the drawings I have done throughout the years.
+                  </div>
+                </paper-material>
+                <paper-material elevation="1">
+                  <div class="container">
+                    <img class="drawing" src="../images/KorInternet.png">
+                    <img class="drawing" src="../images/Zer0.png">
+                    <img class="drawing" src="../images/asdasd.png">
+                    <img class="drawing" src="../images/pokepad.jpeg">
+                    <img class="drawing" src="../images/shelby.jpg">
+                    <img class="drawing" src="../images/DiddyKongInter.png">
+                    <img class="drawing" src="../images/gorilla64finish.png">
+                  </div>
+                </paper-material>
+              </div>
+            </section>
+
+          </iron-pages>
+        </div>
+      
+</paper-scroll-header-panel>
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js">
+
+   
+  </script>
+  <!-- endbuild-->
+
+
+
+</body></html>
